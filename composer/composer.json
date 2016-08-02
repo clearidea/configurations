@@ -1,0 +1,17 @@
+{
+  "require": {
+    "clearidea/neuron": "0.5.*",
+  },
+  "require-dev": {
+    "robmorgan/phinx": "^0.4.6",
+    "squizlabs/php_codesniffer"     : "2.*",
+    "phpmd/phpmd"                   : "@stable",
+    "phpunit/phpunit"               : "4.7.7",
+    "phpdocumentor/phpdocumentor"   : "2.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "ProjectName" : "src",
+    }
+  }
+}
