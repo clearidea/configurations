@@ -1,3 +1,5 @@
+set -e
+
 rubocop \
 --require rubocop/formatter/checkstyle_formatter \
 --format RuboCop::Formatter::CheckstyleFormatter -o reports/xml/checkstyle-result.xml \
