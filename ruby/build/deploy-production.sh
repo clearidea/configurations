@@ -5,7 +5,7 @@ set -e
 # origin/develop:master
 
 app=raydo
-target=master
+target=origin/master:master
 
 remote=heroku
 
