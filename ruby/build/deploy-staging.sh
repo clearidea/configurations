@@ -4,8 +4,8 @@ set -e
 
 # origin/develop:master
 
-app=$1
-target=$2
+app=raydostage
+target=origin/develop:master
 
 remote=heroku
 
@@ -35,8 +35,16 @@ echo "Pushing $target to $remote.."
 
 git push --force $remote $target
 
+echo "Running pre-migration maintenance rake tasks.."
+
+heroku run rake pre_migration
+
 echo "Running database migration.."
 
 heroku run rake db:migrate --app $app
+
+echo "Running post-migration maintenance rake tasks.."
+
+heroku run rake post_migration
 
 maintenance_off
