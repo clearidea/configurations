@@ -1,6 +1,9 @@
 #Configurations
 
 This repository contains files and documentation for our standard configurations.
+##Android
+
+##iOS
 
 ##PHP
 Project is 'built' using apache ant.
@@ -14,5 +17,7 @@ Project is 'built' using apache ant.
 `vendor/bin/phinx migrate -e development`<br>
 `vendor/bin/phinx rollback -e development`<br>
 <br>
+
+##Rails
 
 
